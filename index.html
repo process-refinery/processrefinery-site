@@ -20,21 +20,21 @@
             background-color: #ffffff;
         }
         .hero-bg {
-            background-color: #F0F9FF; /* A light blue, similar to the mockup */
+            background-color: #F0F9FF;
         }
         .section-bg {
-             background-color: #F8FAFC; /* A light gray for alternating sections */
+             background-color: #F8FAFC;
         }
         .cta-button {
-            background-color: #0891B2; /* Cyan-600 */
+            background-color: #0891B2;
             color: white;
             transition: background-color 0.3s ease;
         }
         .cta-button:hover {
-            background-color: #0E7490; /* Cyan-700 */
+            background-color: #0E7490;
         }
         .pricing-highlight {
-            border-color: #0891B2; /* Cyan-600 */
+            border-color: #0891B2;
             transform: scale(1.05);
         }
     </style>
@@ -51,7 +51,7 @@
             </a>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden md:flex items-center space-x-8">
+            <nav class="hidden lg:flex items-center space-x-8">
                 <a href="#services" class="text-slate-600 hover:text-cyan-600 transition-colors">Services</a>
                 <a href="#process" class="text-slate-600 hover:text-cyan-600 transition-colors">Process</a>
                 <a href="#pricing" class="text-slate-600 hover:text-cyan-600 transition-colors">Pricing</a>
@@ -59,12 +59,12 @@
             </nav>
 
             <!-- CTA Button -->
-            <a href="#contact" class="hidden md:inline-block px-5 py-2 rounded-lg text-sm font-semibold cta-button">
+            <a href="#contact" class="hidden lg:inline-block px-5 py-2 rounded-lg text-sm font-semibold cta-button whitespace-nowrap">
                 Book a Consultation
             </a>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100">
+            <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -72,7 +72,7 @@
         </div>
         
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
             <nav class="flex flex-col space-y-4">
                 <a href="#services" class="text-slate-600 hover:text-cyan-600 transition-colors block">Services</a>
                 <a href="#process" class="text-slate-600 hover:text-cyan-600 transition-colors block">Process</a>
@@ -101,13 +101,9 @@
                         Book a Consultation
                     </a>
                 </div>
-                <!-- Hero Image Collage -->
-                <div class="relative h-64 md:h-auto">
-                     <img src="https://placehold.co/150x150/A7F3D0/FFFFFF?text=Zapier" alt="Zapier Logo" class="rounded-full shadow-lg absolute top-0 left-10 md:left-20 animate-pulse">
-                     <img src="https://placehold.co/120x120/BAE6FD/FFFFFF?text=Airtable" alt="Airtable Logo" class="rounded-full shadow-lg absolute top-1/3 -left-5 md:left-0 animate-pulse" style="animation-delay: 0.5s;">
-                     <img src="https://placehold.co/100x100/FBCFE8/FFFFFF?text=HubSpot" alt="HubSpot Logo" class="rounded-full shadow-lg absolute bottom-0 left-1/4 animate-pulse" style="animation-delay: 1s;">
-                     <img src="https://placehold.co/140x140/C7D2FE/FFFFFF?text=Salesforce" alt="Salesforce Logo" class="rounded-full shadow-lg absolute top-1/4 right-0 animate-pulse" style="animation-delay: 1.5s;">
-                     <img src="https://placehold.co/110x110/D1FAE5/FFFFFF?text=Shopify" alt="Shopify Logo" class="rounded-full shadow-lg absolute bottom-5 right-1/4 animate-pulse" style="animation-delay: 2s;">
+                <!-- Hero Image -->
+                <div class="flex justify-center items-center mt-8 md:mt-0">
+                    <img src="https://placehold.co/500x500/0891B2/FFFFFF?text=Automate" alt="Business Automation" class="rounded-lg shadow-xl max-w-md w-full">
                 </div>
             </div>
         </section>
@@ -158,15 +154,111 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                    <div id="platforms-accordion-content" class="hidden p-8">
-                        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-                            <img src="https://placehold.co/120x60/FFFFFF/000000?text=Zapier" alt="Zapier" class="mx-auto grayscale hover:grayscale-0 transition-all">
-                            <img src="https://placehold.co/120x60/FFFFFF/000000?text=Airtable" alt="Airtable" class="mx-auto grayscale hover:grayscale-0 transition-all">
-                            <img src="https://placehold.co/120x60/FFFFFF/000000?text=Make" alt="Make" class="mx-auto grayscale hover:grayscale-0 transition-all">
-                            <img src="https://placehold.co/120x60/FFFFFF/000000?text=HubSpot" alt="HubSpot" class="mx-auto grayscale hover:grayscale-0 transition-all">
-                            <img src="https://placehold.co/120x60/FFFFFF/000000?text=Salesforce" alt="Salesforce" class="mx-auto grayscale hover:grayscale-0 transition-all">
-                            <img src="https://placehold.co/120x60/FFFFFF/000000?text=Shopify" alt="Shopify" class="mx-auto grayscale hover:grayscale-0 transition-all">
+                    <div id="platforms-accordion-content" class="hidden p-8 text-slate-300">
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-10">
+                            
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">Automation</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>N8N</li>
+                                    <li>Zapier</li>
+                                    <li>Make</li>
+                                    <li>Javascript</li>
+                                    <li>Python</li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">Project Management</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>Asana</li>
+                                    <li>ClickUp</li>
+                                    <li>Monday.com</li>
+                                    <li>Notion</li>
+                                    <li>Airtable</li>
+                                    <li>Slack</li>
+                                    <li>Trello</li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">Websites & Web Apps</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>Webflow</li>
+                                    <li>Appsheet</li>
+                                    <li>Bubble.io</li>
+                                    <li>Wordpress</li>
+                                    <li>SquareSpace</li>
+                                    <li>Wix</li>
+                                    <li>Glide</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">Email Marketing</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>Mailchimp</li>
+                                    <li>ActiveCampaign</li>
+                                    <li>Mailerlite</li>
+                                    <li>ConstantContact</li>
+                                    <li>ConvertKit</li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">CRM</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>Airtable</li>
+                                    <li>Salesforce</li>
+                                    <li>Bloomerang</li>
+                                    <li>Hubspot</li>
+                                    <li>Pipedrive</li>
+                                    <li>Keap</li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">Form Builders</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>Typeform</li>
+                                    <li>Google Forms</li>
+                                    <li>Tally</li>
+                                    <li>Airtable</li>
+                                    <li>Cognito Forms</li>
+                                    <li>Formstack</li>
+                                    <li>Jotforms</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">Graphics</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>Canva</li>
+                                    <li>Illustrator</li>
+                                    <li>Photoshop</li>
+                                    <li>Miro</li>
+                                    <li>LucidChart</li>
+                                    <li>Figma</li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-1">
+                                <h4 class="font-bold text-lg text-white mb-2 border-b border-slate-600 pb-1">eCommerce & Payments</h4>
+                                <ul class="list-disc list-inside">
+                                    <li>Shopify</li>
+                                    <li>Stripe</li>
+                                    <li>ChargeBee</li>
+                                    <li>Paypal</li>
+                                    <li>WooCommerce</li>
+                                    <li>ThriveCart</li>
+                                    <li>ClickFunnels</li>
+                                </ul>
+                            </div>
+
                         </div>
+                        <p class="text-center mt-10 text-slate-400 italic">
+                            Don't worry if your tool is not listed. We learn new tools and systems all the time.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -175,47 +267,48 @@
         <!-- Process Section -->
         <section id="process" class="py-20 section-bg">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
+                <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">How We Work</h2>
                 </div>
-                <div class="grid md:grid-cols-4 gap-8 text-center">
-                    <!-- Step 1 -->
-                    <div class="relative">
-                        <div class="flex items-center justify-center">
-                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold">1</div>
-                            <div class="flex-auto border-t-2 border-cyan-500 border-dashed hidden md:block"></div>
-                        </div>
-                        <h3 class="text-xl font-bold mt-4 mb-2">Define your need</h3>
-                        <p class="text-slate-600">We'll meet to define the scope of your problem and what success looks like.</p>
+                <div class="relative">
+                    <!-- The connecting dashed line for desktop view -->
+                    <div class="hidden md:block absolute top-8 left-0 w-full h-px">
+                        <div class="border-t-2 border-dashed border-cyan-400 w-10/12 lg:w-3/4 mx-auto"></div>
                     </div>
-                    <!-- Step 2 -->
-                    <div class="relative">
-                        <div class="flex items-center justify-center">
-                             <div class="flex-auto border-t-2 border-cyan-500 border-dashed hidden md:block"></div>
-                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold">2</div>
-                            <div class="flex-auto border-t-2 border-cyan-500 border-dashed hidden md:block"></div>
+        
+                    <div class="grid md:grid-cols-4 gap-y-12 md:gap-y-0 md:gap-x-8 text-center">
+                        <!-- Step 1 -->
+                        <div class="relative">
+                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold mx-auto relative z-10 border-4 border-white" style="background-color: #0891B2;">1</div>
+                            <div class="mt-4">
+                                <h3 class="text-xl font-bold mb-2">Define your need</h3>
+                                <p class="text-slate-600 px-4 md:px-0">We'll meet to define the scope of your problem and what success looks like.</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold mt-4 mb-2">Plan Project Scope</h3>
-                        <p class="text-slate-600">We'll map out the project scope and provide a detailed plan with timeline and costs so there are no surprises.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="relative">
-                        <div class="flex items-center justify-center">
-                            <div class="flex-auto border-t-2 border-cyan-500 border-dashed hidden md:block"></div>
-                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold">3</div>
-                            <div class="flex-auto border-t-2 border-cyan-500 border-dashed hidden md:block"></div>
+                        <!-- Step 2 -->
+                        <div class="relative">
+                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold mx-auto relative z-10 border-4 border-white" style="background-color: #0891B2;">2</div>
+                            <div class="mt-4">
+                                <h3 class="text-xl font-bold mb-2">Plan Project Scope</h3>
+                                <p class="text-slate-600 px-4 md:px-0">We'll map out the project scope and provide a detailed plan with timeline and costs so there are no surprises.</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold mt-4 mb-2">Develop Solutions</h3>
-                        <p class="text-slate-600">We get to work building with your feedback during the process.</p>
-                    </div>
-                    <!-- Step 4 -->
-                    <div class="relative">
-                        <div class="flex items-center justify-center">
-                            <div class="flex-auto border-t-2 border-cyan-500 border-dashed hidden md:block"></div>
-                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold">4</div>
+                        <!-- Step 3 -->
+                        <div class="relative">
+                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold mx-auto relative z-10 border-4 border-white" style="background-color: #0891B2;">3</div>
+                            <div class="mt-4">
+                                <h3 class="text-xl font-bold mb-2">Develop Solutions</h3>
+                                <p class="text-slate-600 px-4 md:px-0">We get to work building with your feedback during the process.</p>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold mt-4 mb-2">Launch & Maintain</h3>
-                        <p class="text-slate-600">We'll help you launch your new solution and provide ongoing support to make sure it's running smoothly.</p>
+                        <!-- Step 4 -->
+                        <div class="relative">
+                            <div class="w-16 h-16 rounded-full bg-cyan-500 text-white flex items-center justify-center text-2xl font-bold mx-auto relative z-10 border-4 border-white" style="background-color: #0891B2;">4</div>
+                            <div class="mt-4">
+                                <h3 class="text-xl font-bold mb-2">Launch & Maintain</h3>
+                                <p class="text-slate-600 px-4 md:px-0">We'll help you launch your new solution and provide ongoing support to make sure it's running smoothly.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,14 +413,13 @@
     <!-- JavaScript for interactivity -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
+            // --- Standard Interactivity ---
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            // Platforms accordion toggle
             const accordionButton = document.getElementById('platforms-accordion-button');
             const accordionContent = document.getElementById('platforms-accordion-content');
             const accordionIcon = document.getElementById('platforms-accordion-icon');
@@ -336,11 +428,12 @@
                 accordionIcon.classList.toggle('rotate-180');
             });
             
-            // Close mobile menu when a link is clicked
-            const navLinks = document.querySelectorAll('#mobile-menu a');
+            const navLinks = document.querySelectorAll('#mobile-menu a, #header nav a');
             navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                     mobileMenu.classList.add('hidden');
+                link.addEventListener('click', (e) => {
+                    if(mobileMenu.classList.contains('hidden') === false) {
+                        mobileMenu.classList.add('hidden');
+                    }
                 });
             });
         });
